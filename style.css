@@ -1,0 +1,255 @@
+
+/* =========================
+   OCTO MATH BATTLE
+   FUTURISTIC DESIGN
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(
+        circle at top,
+        #172b55,
+        #080d1b 65%
+    );
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 480px;
+    min-height: 650px;
+    background: rgba(12, 20, 42, 0.95);
+    border: 1px solid #263d70;
+    border-radius: 22px;
+    padding: 25px;
+    box-shadow: 0 0 35px rgba(0, 140, 255, 0.15);
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 27px;
+    font-weight: 900;
+    color: #58c7ff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px #168dff;
+}
+
+.header p {
+    color: #8da9d6;
+    font-size: 12px;
+    margin-top: 8px;
+    letter-spacing: 2px;
+}
+
+/* WELCOME */
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    color: #91a3c5;
+    font-size: 13px;
+}
+
+/* PLAYER NAME */
+
+.player-section {
+    margin-bottom: 25px;
+}
+
+.player-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #8fcfff;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    background: #111e39;
+    border: 1px solid #31558d;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #43baff;
+    box-shadow: 0 0 10px #168dff55;
+}
+
+input::placeholder {
+    color: #657b9f;
+}
+
+/* BUTTONS */
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #387bc8;
+    border-radius: 11px;
+    background: linear-gradient(120deg, #1264c5, #4738b9);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 15px #287eff66;
+}
+
+/* JOIN ROOM */
+
+#roomSection {
+    margin-top: 25px;
+    padding: 20px;
+    background: #101d37;
+    border: 1px solid #31558d;
+    border-radius: 13px;
+}
+
+#roomSection h2 {
+    color: #58c7ff;
+    margin-bottom: 10px;
+}
+
+#roomSection p {
+    color: #91a3c5;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+#roomSection button {
+    margin-top: 12px;
+}
+
+/* WAITING ROOM */
+
+#waitingRoom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#waitingRoom h2 {
+    color: #58c7ff;
+    margin-bottom: 20px;
+}
+
+#waitingRoom > p {
+    color: #91a3c5;
+    font-size: 13px;
+}
+
+#displayRoomCode {
+    margin: 12px 0;
+    padding: 18px;
+    background: #111e39;
+    border: 1px solid #43baff;
+    border-radius: 12px;
+    color: #58c7ff;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+.player-card {
+    margin-top: 15px;
+    padding: 18px;
+    background: #101d37;
+    border: 1px solid #31558d;
+    border-radius: 12px;
+}
+
+.player-card h3 {
+    color: #58c7ff;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.player-card p {
+    color: white;
+    font-size: 16px;
+}
+
+#roomStatus {
+    margin: 20px 0;
+    color: #58c7ff;
+}
+
+#leaveRoomBtn {
+    background: linear-gradient(120deg, #9e283c, #70264d);
+    border-color: #d34d67;
+}
+
+/* HIDDEN */
+
+.hidden {
+    display: none !important;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #627b9f;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+/* MOBILE */
+
+@media (max-width: 400px) {
+    .game-container {
+        padding: 18px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .welcome h2 {
+        font-size: 20px;
+    }
+}

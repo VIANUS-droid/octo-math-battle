@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCTO MATH BATTLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-container">
+
+    <header class="header">
+        <h1>OCTO MATH BATTLE</h1>
+        <p>Think Fast. Win The Battle.</p>
+    </header>
+
+    <!-- MAIN MENU -->
+    <main id="mainMenu">
+
+        <div class="welcome">
+            <h2>WELCOME PLAYER!</h2>
+            <p>Challenge your friends in a math battle.</p>
+        </div>
+
+        <div class="player-section">
+            <label for="playerName">Player Name</label>
+            <input
+                type="text"
+                id="playerName"
+                placeholder="Masukkan nama pemain..."
+                maxlength="16"
+            >
+        </div>
+
+        <div class="menu-buttons">
+
+            <button id="createRoomBtn">
+                CREATE ROOM
+            </button>
+
+            <button id="joinRoomBtn">
+                JOIN ROOM
+            </button>
+
+            <button id="leaderboardBtn">
+                LEADERBOARD
+            </button>
+
+            <button id="settingsBtn">
+                SETTINGS
+            </button>
+
+        </div>
+
+        <!-- JOIN ROOM -->
+        <section id="roomSection" class="hidden">
+
+            <h2>JOIN ROOM</h2>
+
+            <p>Masukkan kode room temanmu</p>
+
+            <input
+                type="text"
+                id="roomCode"
+                placeholder="Kode Room"
+                maxlength="6"
+                inputmode="numeric"
+            >
+
+            <button id="confirmJoinBtn">
+                JOIN NOW
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- WAITING ROOM -->
+    <section id="waitingRoom" class="hidden">
+
+        <h2>WAITING ROOM</h2>
+
+        <p>KODE ROOM</p>
+
+        <div id="displayRoomCode">
+            ------
+        </div>
+
+        <button id="copyRoomBtn">
+            COPY ROOM CODE
+        </button>
+
+        <div class="player-card">
+
+            <h3>PLAYER 1 - HOST</h3>
+            <p id="hostName">Menunggu...</p>
+
+        </div>
+
+        <div class="player-card">
+
+            <h3>PLAYER 2 - GUEST</h3>
+            <p id="guestName">Menunggu pemain...</p>
+
+        </div>
+
+        <p id="roomStatus">
+            Menunggu pemain kedua...
+        </p>
+
+        <button id="leaveRoomBtn">
+            LEAVE ROOM
+        </button>
+
+    </section>
+
+    <footer class="footer">
+        <p>OCTO MATH BATTLE © 2026</p>
+        <p>Multiplayer Math Competition</p>
+    </footer>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
